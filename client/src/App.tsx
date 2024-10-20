@@ -47,7 +47,9 @@ export default function App() {
       webApp.disableVerticalSwipes();
     }
 
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, []);
  
   return (

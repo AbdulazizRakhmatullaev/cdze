@@ -19,8 +19,7 @@ const ToTopBtn = () => {
     const mainCon = document.getElementById("mainCon")
 
     mainCon?.scrollIntoView({
-      behavior: "smooth",
-      block: 'start'
+      behavior: "smooth"
     });
   };
 
