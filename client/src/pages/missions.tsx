@@ -1,4 +1,4 @@
-const Tasks = () => {
+export default function Missions(){
     return (
         <>
           <div className="title">
@@ -7,7 +7,7 @@ const Tasks = () => {
           </div>
 
           <div className="header">
-              <img src="./missions.jpg" className="hd_img" />
+              <img src="./missions.jpg" alt="img" className="hd_img" />
               <div className="hd_desc">Complete the objectives, Soldier.<br/> Extra points are on the line!</div>
 
               <div className="hdres">Missions complete: 7</div>
@@ -26,5 +26,3 @@ const Tasks = () => {
         </>
     )
 }
-
-export default Tasks;

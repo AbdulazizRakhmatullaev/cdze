@@ -8,7 +8,7 @@ const Home = () => {
               <div className="tRow">Base</div>
             </div>
             <div className='homcon'>
-                <img src="./baseChar.png" /> 
+                <img src="./baseChar.png" alt="img" /> 
                 <div className="balance">
                     <div className="coinscnt"></div>
                 </div>
