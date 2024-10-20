@@ -1,29 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const ToTopBtn = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const main = document.getElementById("main");
-
-  const toggleVisibility = () => {
+  
+  useEffect(() => {
     const main = document.getElementById("main");
 
-    if (main && main.scrollTop > 20) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-
-  };
+    main?.addEventListener("scroll", () => {
+      if (main.scrollTop > 200) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    });
+  }, []);
 
   const scrollToTop = () => {
-    const main = document.getElementById("mainCon");
+    const mainCon = document.getElementById("mainCon")
 
-    main?.scrollIntoView({'behavior': "smooth"})
+    mainCon?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  if (main) {
-    main.addEventListener("scroll", toggleVisibility);
-  }
 
   return (
     <div id="toTop" className={isVisible ? "show" : ''} onClick={scrollToTop}>

@@ -3,11 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const { pathname } = useLocation();
-  const base      = pathname === "/cdze/"
-  const equipment = pathname === '/cdze/equipment'
-  const missions  = pathname === '/cdze/missions'
-  const rankings  = pathname === '/cdze/rankings'
-  const squad     = pathname === '/cdze/squad'
+  const base      = pathname === "/"
+  const equipment = pathname === '/equipment'
+  const missions  = pathname === '/missions'
+  const rankings  = pathname === '/rankings'
+  const squad     = pathname === '/squad'
 
   const trigHapticFdb = () => {
     window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
