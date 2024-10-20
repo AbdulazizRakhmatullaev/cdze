@@ -67,11 +67,11 @@ export default function App() {
             <div id="main">   
               <div id="mainCon">
                 <Routes>
-                  <Route path="cdze/" element={<Base />} />
-                  <Route path="cdze/equipment" element={<Equipment />} />
-                  <Route path="cdze/missions" element={<Missions />} />
-                  <Route path="cdze/rankings" element={<Rankings />} />
-                  <Route path="cdze/squad" element={<Squad />} />
+                  <Route path="/" element={<Base />} />
+                  <Route path="/equipment" element={<Equipment />} />
+                  <Route path="/missions" element={<Missions />} />
+                  <Route path="/rankings" element={<Rankings />} />
+                  <Route path="/squad" element={<Squad />} />
                 </Routes>
                 <ToTopBtn />              
               </div>
