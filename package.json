@@ -1,0 +1,30 @@
+{
+  "name": "cdze",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"ts-node src/server.ts\" \"npm run start --prefix client\"",
+    "server": "ts-node src/server.ts",
+    "client": "npm start --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.7",
+    "concurrently": "^9.0.1",
+    "express": "^4.21.1",
+    "gh-pages": "^6.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0"
+  }
+}
