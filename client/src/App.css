@@ -76,7 +76,7 @@ a {
     flex-direction: column;
     background: url('/public/dotbg.jpg') center center no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .4);
     background-blend-mode: multiply;
 }
 
