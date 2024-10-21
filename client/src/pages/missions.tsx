@@ -1,28 +1,53 @@
+
 export default function Missions(){
-    return (
-        <>
-          <div className="title">
-            <div className="grid"></div>
-            <div className="tRow">Missions</div>
-          </div>
+  return (
+    <>
+      <div className="title">
+        <div className="grid"></div>
+        <div className="tRow">Missions</div>
+      </div>
 
-          <div className="header">
-              <img src="./missions.jpg" alt="img" className="hd_img" />
-              <div className="hd_desc">Complete the objectives, Soldier.<br/> Extra points are on the line!</div>
+      <div className="header">
+        <img src="./missions.jpg" alt="img" className="hd_img" />
+        <div className="hd_desc">Complete the objectives, Soldier.<br/> Extra points are on the line!</div>
 
-              <div className="hdres">Missions complete: 7</div>
-          </div>
+      </div>
+      <div className="pgres">Missions complete: 6</div>
 
-          <div className="misCat">Essential</div>
-          <div className="mis">
-            <div className="misInf">
-                <div className="misT">TON mission</div>
-                <div className="misDesc">1,000 CDZE</div>
-            </div>
+      <div className="misCat">Essentials</div>
+      <div className="mis">
+        <div className="misInf">
+          <div className="misT">TON mission</div>
+          <div className="misDesc">1,000 CDZE</div>
+        </div>
 
-            <button className="misProg">Execute!</button>
-          </div>
-          
-        </>
-    )
+        <button className="misProg">Execute!</button>
+      </div>
+      <div className="misCat">Investigation</div>
+      <div className="mis">
+        <div className="misInf">
+          <div className="misT">Subscribe to channel</div>
+          <div className="misDesc">700 CDZE</div>
+        </div>
+
+        <button className="misProg">Execute!</button>
+      </div>
+      <div className="mis">
+        <div className="misInf">
+          <div className="misT">Subscribe to YouTube</div>
+          <div className="misDesc">700 CDZE</div>
+        </div>
+
+        <button className="misProg">Execute!</button>
+      </div>
+      <div className="mis">
+        <div className="misInf">
+          <div className="misT">Subscribe to X</div>
+          <div className="misDesc">700 CDZE</div>
+        </div>
+
+        <button className="misProg">Execute!</button>
+      </div>
+    </>
+  )
 }

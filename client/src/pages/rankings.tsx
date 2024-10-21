@@ -9,8 +9,8 @@ export default function Rankings() {
               <img src="./rankings.jpeg" alt="img" className="hd_img" />
               <div className="hd_desc">Put in the effort and prove your worth.<br/>rank up and show them what you’re made of!</div>
 
-              <div className="hdres">Place: 3rd</div>
-          </div>    
+          </div>
+          <div className="pgres">Place: 3rd</div>
     </>
     );
 }
